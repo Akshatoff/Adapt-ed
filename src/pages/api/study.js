@@ -79,7 +79,7 @@ Make sure the response is valid JSON and incorporates their specific interests, 
       method: "POST",
       headers: {
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "http://localhost:3000",
+        "HTTP-Referer": "https://adapt-ed-eight.vercel.app/",
         "X-Title": "AdaptED - Personalized Learning Platform", // Your site name
         "Content-Type": "application/json"
       },
