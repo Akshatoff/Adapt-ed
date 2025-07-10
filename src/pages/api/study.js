@@ -78,7 +78,7 @@ Make sure the response is valid JSON and incorporates their specific interests, 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer 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",
+        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
         "HTTP-Referer": "http://localhost:3000",
         "X-Title": "AdaptED - Personalized Learning Platform", // Your site name
         "Content-Type": "application/json"
@@ -176,10 +176,11 @@ Make sure the response is valid JSON and incorporates their specific interests, 
 
     res.status(200).json(studyPlan);
   } catch (error) {
-    console.error('Error generating study plan:', error);
-    res.status(500).json({ 
-      error: 'Failed to generate study plan. Please try again later.',
-      details: error.message 
-    });
+     console.error('🔴 Error generating study plan:', error.message);
+  console.error('🔴 Stack:', error.stack);
+  res.status(500).json({ 
+    error: 'Failed to generate study plan. Please try again later.',
+    details: error.message 
+  });
   }
 }
