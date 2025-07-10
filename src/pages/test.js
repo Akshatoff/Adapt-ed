@@ -157,7 +157,7 @@ export default function TestRoute() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                What's your current academic level?
+                What&apos;s your current academic level?
               </label>
               <select
                 name="currentLevel"
