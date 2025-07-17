@@ -7,7 +7,7 @@ export const pricing = [
       yearly: 0,
     },
     unit: "per user/month",
-    currency: "$",
+    currency: "₹",
     features: [
       "Access to sample learning paths",
       "Basic psychometric insights",
@@ -25,11 +25,11 @@ export const pricing = [
     name: "Pro",
     description: "For institutions scaling personalization",
     value: {
-      monthly: 15,
-      yearly: 12,
+      monthly: 799,
+      yearly: 699,
     },
     unit: "per user/month",
-    currency: "$",
+    currency: "₹",
     features: [
       "All Free features",
       "Full AI-driven personalization",
@@ -46,11 +46,11 @@ export const pricing = [
     name: "Enterprise",
     description: "For large-scale adaptive learning rollouts",
     value: {
-      monthly: 29,
-      yearly: 24,
+      monthly: 2499,
+      yearly: 2349,
     },
     unit: "per user/month",
-    currency: "$",
+    currency: "₹",
     features: [
       "All Pro features",
       "Dedicated AI onboarding team",
